@@ -32,7 +32,7 @@ def main_menu():
 ██║╚██╔╝██║██║   ██║██║     ██║   ██║   ╚════██║██╔══██║
 ██║ ╚═╝ ██║╚██████╔╝███████╗██║   ██║██╗███████║██║  ██║
 ╚═╝     ╚═╝ ╚═════╝ ╚══════╝╚═╝   ╚═╝╚═╝╚══════╝╚═╝  ╚═╝
-v1.6
+v1.8.2
 _______________                                                        
 |     By      |
 |SimplyPancake|
@@ -50,7 +50,7 @@ _______________
     print "6. Fluxion"
     print "7. Yuki-Chan"
     print "8. RouterSploit"
-    print "m. Enter mass-action menu(DOES NOT WORK FOR SOME REASON)"
+    print "m. Enter mass-action menu"
     print "\n99. Quit"
     choice = raw_input(" >>  ")
     exec_menu(choice)
@@ -106,9 +106,10 @@ def yuki():
 def rsploit():
     os.system('cd InSc && python insRS.py')
 
+
 #mass action menu
 def mass():
-    os.system('python MassUpdate.py')
+    os.system('python MassShell.py')
 
 # Exit program
 def exit():

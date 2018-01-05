@@ -11,5 +11,3 @@ cd MultiShell
 
 python MultiShell.py
 
-<OR WATCH THIS VIDEO>
-https://www.youtube.com/watch?v=LuvY6i-CEe0   (outdated)

@@ -7,14 +7,14 @@
 #version         :0.1
 #usage           :
 #notes           :
-#python_version  :2.7.6  
+#python_version  :2.7.6
 #=======================================================================
 
 # Import the modules needed to run the script.
 import sys, os
 
 # Main definition - constants
-menu_actions  = {}  
+menu_actions  = {}
 
 # =======================
 #     MENUS FUNCTIONS
@@ -23,7 +23,7 @@ menu_actions  = {}
 # Main menu
 def main_menu():
     os.system('clear')
-    
+
     print """
 ███╗   ███╗ █████╗ ███████╗███████╗
 ████╗ ████║██╔══██╗██╔════╝██╔════╝
@@ -31,14 +31,14 @@ def main_menu():
 ██║╚██╔╝██║██╔══██║╚════██║╚════██║
 ██║ ╚═╝ ██║██║  ██║███████║███████║
 ╚═╝     ╚═╝╚═╝  ╚═╝╚══════╝╚══════╝
-MassShell v1.2                                   
-_______________                                                        
+
+_______________
 |     By      |
 |SimplyPancake|
 |_____________|
-(\__/) || 
-(•ㅅ•) || 
-/ 　 \づ  
+(\__/) ||
+(•ㅅ•) ||
+/ 　 \づ
 	  """
     print "1. Install all tools(INSTALLS ROUTERSPLOIT KALI VERSION)"
     print "2. Update all tools(ONLY WORKS IF ALL TOOLS INSTALLED)"
@@ -90,38 +90,40 @@ def upd8():
 #Update FatRat
     os.system('chmod +x InSc/TheFatRat/update && ./InSc/TheFatRat/update && chmod +x InSc/TheFatRat/setup.sh && ./InSc/TheFatRat/setup.sh')
     os.system('clear')
+#Go back to main menu
+    os.system('python MassShell.py')
 
 #================
 #install all
 #================
 def installall():
 #install DZGEN
-    os.system('git clone https://github.com/joker25000/DZGEN.git')
-    os.system('chmod +x DZGEN/DZGEN')
+    os.system('cd InSc && git clone https://github.com/joker25000/DZGEN.git')
+    os.system('chmod +x InSc/DZGEN/DZGEN')
     os.system('clear')
 #install Fluxion
-    os.system('git clone https://github.com/FluxionNetwork/fluxion.git')
+    os.system('cd InSc && git clone https://github.com/FluxionNetwork/fluxion.git')
     os.system('clear')
 #install fsociety
-    os.system('git clone https://github.com/Manisso/fsociety.git')
+    os.system('cd InSc && git clone https://github.com/Manisso/fsociety.git')
     os.system('./fsociety/install.sh')
     os.system('clear')
 #install redhawk
-    os.system('git clone https://github.com/Tuhinshubhra/RED_HAWK.git')
+    os.system('cd InSc && git clone https://github.com/Tuhinshubhra/RED_HAWK.git')
     os.system('clear')
 #install routersploit for kali
     os.system('pip install requests')
     os.system('pip install paramiko')
     os.system('pip install beautifulsoup4')
     os.system('pip install pysnmp')
-    os.system('git clone https://github.com/reverse-shell/routersploit')
+    os.system('cd InSc && git clone https://github.com/reverse-shell/routersploit')
     os.system('clear')
 #install yuki chan
-    os.system('git clone https://github.com/Yukinoshita47/Yuki-Chan-The-Auto-Pentest.git')
-    os.system('cd Yuki-Chan-The-Auto-Pentest && chmod 777 wafninja joomscan install-perl-module.sh yuki.sh')
-    os.system('cd Yuki-Chan-The-Auto-Pentest && chmod 777 Module/WhatWeb/whatweb')
-    os.system('pip install -r Yuki-Chan-The-Auto-Pentest/requirements.txt')
-    os.system('cd Yuki-Chan-The-Auto-Pentest && ./install perl-module.sh')
+    os.system('cd InSc && git clone https://github.com/Yukinoshita47/Yuki-Chan-The-Auto-Pentest.git')
+    os.system('cd InSc/Yuki-Chan-The-Auto-Pentest && chmod 777 wafninja joomscan install-perl-module.sh yuki.sh')
+    os.system('cd InSc/Yuki-Chan-The-Auto-Pentest && chmod 777 Module/WhatWeb/whatweb')
+    os.system('pip install -r InSc/Yuki-Chan-The-Auto-Pentest/requirements.txt')
+    os.system('cd InSc/Yuki-Chan-The-Auto-Pentest && ./install perl-module.sh')
     os.system('clear')
 #print msg to install trity and fatrat.
     os.system('clear')
