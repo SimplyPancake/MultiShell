@@ -1,20 +1,14 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-#title           :menu.py
-#description     :This program displays an interactive menu on CLI
-#author          :
-#date            :
-#version         :0.1
-#usage           :python menu.py
-#notes           :
-#python_version  :2.7.6  
+#author          :SimplyPancake
+#python_version  :2.7.6
 #=======================================================================
 
 # Import the modules needed to run the script.
 import sys, os
 
 # Main definition - constants
-menu_actions  = {}  
+menu_actions  = {}
 
 # =======================
 #     MENUS FUNCTIONS
@@ -23,21 +17,21 @@ menu_actions  = {}
 # Main menu
 def main_menu():
     os.system('clear')
-    
+
     print """
 ███████╗███████╗ ██████╗  ██████╗██╗███████╗████████╗██╗   ██╗
 ██╔════╝██╔════╝██╔═══██╗██╔════╝██║██╔════╝╚══██╔══╝╚██╗ ██╔╝
-█████╗  ███████╗██║   ██║██║     ██║█████╗     ██║    ╚████╔╝ 
-██╔══╝  ╚════██║██║   ██║██║     ██║██╔══╝     ██║     ╚██╔╝  
-██║     ███████║╚██████╔╝╚██████╗██║███████╗   ██║      ██║   
-╚═╝     ╚══════╝ ╚═════╝  ╚═════╝╚═╝╚══════╝   ╚═╝      ╚═╝   
-_______________                                                        
+█████╗  ███████╗██║   ██║██║     ██║█████╗     ██║    ╚████╔╝
+██╔══╝  ╚════██║██║   ██║██║     ██║██╔══╝     ██║     ╚██╔╝
+██║     ███████║╚██████╔╝╚██████╗██║███████╗   ██║      ██║
+╚═╝     ╚══════╝ ╚═════╝  ╚═════╝╚═╝╚══════╝   ╚═╝      ╚═╝
+_______________
 |     By      |
 |SimplyPancake|
 |_____________|
-(\__/) || 
-(•ㅅ•) || 
-/ 　 \づ  
+(\__/) ||
+(•ㅅ•) ||
+/ 　 \づ
 	  """
     print "What to do with Fsociety?:"
     print "1. Run Fsociety"
@@ -64,7 +58,7 @@ def exec_menu(choice):
             menu_actions['main_menu']()
     return
 
-# install fsociety
+# install
 def install():
     os.system('git clone https://github.com/Manisso/fsociety.git')
     os.system('./fsociety/install.sh')
@@ -73,12 +67,12 @@ def install():
     return
 
 
-# run Fsociety
-def runFS():
+# run
+def run():
     os.system('fsociety')
 
-# update Fsociety
-def updtFS():
+# update
+def updt():
     os.system('chmod +x fsociety/update.sh && ./fsociety/update.sh')
     os.system('clear')
     os.system('python insFS.py')
@@ -99,8 +93,8 @@ def exit():
 menu_actions = {
     'main_menu': main_menu,
     '2': install,
-    '1': runFS,
-    '3': updtFS,
+    '1': run,
+    '3': updt,
     'a': about,
     '99': exit,
 }

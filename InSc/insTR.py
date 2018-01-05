@@ -1,20 +1,14 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-#title           :menu.py
-#description     :This program displays an interactive menu on CLI
-#author          :
-#date            :
-#version         :0.1
-#usage           :
-#notes           :
-#python_version  :2.7.6  
+#author          :SimplyPancake
+#python_version  :2.7.6
 #=======================================================================
 
 # Import the modules needed to run the script.
 import sys, os
 
 # Main definition - constants
-menu_actions  = {}  
+menu_actions  = {}
 
 # =======================
 #     MENUS FUNCTIONS
@@ -23,21 +17,21 @@ menu_actions  = {}
 # Main menu
 def main_menu():
     os.system('clear')
-    
+
     print """
 ████████╗██████╗ ██╗████████╗██╗   ██╗
 ╚══██╔══╝██╔══██╗██║╚══██╔══╝╚██╗ ██╔╝
-   ██║   ██████╔╝██║   ██║    ╚████╔╝ 
-   ██║   ██╔══██╗██║   ██║     ╚██╔╝  
-   ██║   ██║  ██║██║   ██║      ██║   
-   ╚═╝   ╚═╝  ╚═╝╚═╝   ╚═╝      ╚═╝   
-_______________                                                        
+   ██║   ██████╔╝██║   ██║    ╚████╔╝
+   ██║   ██╔══██╗██║   ██║     ╚██╔╝
+   ██║   ██║  ██║██║   ██║      ██║
+   ╚═╝   ╚═╝  ╚═╝╚═╝   ╚═╝      ╚═╝
+_______________
 |     By      |
 |SimplyPancake|
 |_____________|
-(\__/) || 
-(•ㅅ•) || 
-/ 　 \づ  
+(\__/) ||
+(•ㅅ•) ||
+/ 　 \づ
 	  """
     print "What to do with Trity?:"
     print "1. Run Trity"
@@ -65,18 +59,18 @@ def exec_menu(choice):
     return
 
 # run trity
-def runTR():
+def run():
     os.system('trity')
     return
 
-#update trity
-def updtTR():
+#update
+def updt():
     os.system('cd Trity && sudo git pull')
     os.system('clear')
     os.system('python insTR.py')
 
-#install trity
-def insTR():
+#install
+def install():
     os.system('git clone https://github.com/toxic-ig/Trity.git')
     os.system('chmod +x Trity/install.py')
     os.system('chmod +x Trity/trity.py')
@@ -100,9 +94,9 @@ def exit():
 # Menu definition
 menu_actions = {
     'main_menu': main_menu,
-    '1': runTR,
-    '2': insTR,
-    '3': updtTR,
+    '1': run,
+    '2': install,
+    '3': updt,
     'a': about,
     '99': exit,
 }

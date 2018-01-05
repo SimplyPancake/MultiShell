@@ -1,20 +1,14 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-#title           :menu.py
-#description     :This program displays an interactive menu on CLI
-#author          :
-#date            :
-#version         :0.1
-#usage           :python menu.py
-#notes           :
-#python_version  :2.7.6  
+#author          :SimplyPancake
+#python_version  :2.7.6
 #=======================================================================
 
 # Import the modules needed to run the script.
 import sys, os
 
 # Main definition - constants
-menu_actions  = {}  
+menu_actions  = {}
 
 # =======================
 #     MENUS FUNCTIONS
@@ -23,22 +17,22 @@ menu_actions  = {}
 # Main menu
 def main_menu():
     os.system('clear')
-    
+
     print """
 ██████╗       ███████╗██████╗ ██╗      ██████╗ ██╗████████╗
 ██╔══██╗      ██╔════╝██╔══██╗██║     ██╔═══██╗██║╚══██╔══╝
-██████╔╝█████╗███████╗██████╔╝██║     ██║   ██║██║   ██║   
-██╔══██╗╚════╝╚════██║██╔═══╝ ██║     ██║   ██║██║   ██║   
-██║  ██║      ███████║██║     ███████╗╚██████╔╝██║   ██║   
-╚═╝  ╚═╝      ╚══════╝╚═╝     ╚══════╝ ╚═════╝ ╚═╝   ╚═╝   
-                                                          
-_______________                                                        
+██████╔╝█████╗███████╗██████╔╝██║     ██║   ██║██║   ██║
+██╔══██╗╚════╝╚════██║██╔═══╝ ██║     ██║   ██║██║   ██║
+██║  ██║      ███████║██║     ███████╗╚██████╔╝██║   ██║
+╚═╝  ╚═╝      ╚══════╝╚═╝     ╚══════╝ ╚═════╝ ╚═╝   ╚═╝
+
+_______________
 |     By      |
 |SimplyPancake|
 |_____________|
-(\__/) || 
-(•ㅅ•) || 
-/ 　 \づ  
+(\__/) ||
+(•ㅅ•) ||
+/ 　 \づ
 	  """
     print "What to do with Routersploit?:"
     print "1. Run Routersploit"
@@ -66,13 +60,13 @@ def exec_menu(choice):
             menu_actions['main_menu']()
     return
 
-# run redhawk
-def runRH():
+# run
+def run():
     os.system('./routersploit/rsf.py')
     return
 
 #install for kali
-def insRHK():
+def installK():
     os.system('pip install requests')
     os.system('pip install paramiko')
     os.system('pip install beautifulsoup4')
@@ -82,7 +76,7 @@ def insRHK():
     os.system('python insRS.py')
 
 #install for Ubuntu 16.04
-def insRHU():
+def installU():
     os.system('pip install requests')
     os.system('pip install paramiko')
     os.system('pip install beautifulsoup4')
@@ -91,8 +85,8 @@ def insRHU():
     os.system('git clone https://github.com/reverse-shell/routersploit')
     os.system('cd routersploit && sudo pip install -r requirements.txt')
 
-#update redhawk
-def updtRH():
+#update
+def update():
     os.system('cd routersploit && sudo git pull')
     os.system('clear')
     os.system('python insRS.py')
@@ -118,10 +112,10 @@ def exit():
 # Menu definition
 menu_actions = {
     'main_menu': main_menu,
-    '1': runRH,
-    '2': insRHK,
-    '3': insRHU,
-    '4': updtRH,
+    '1': run,
+    '2': installK,
+    '3': installU,
+    '4': updt,
     'a': about,
     '99': exit,
 }

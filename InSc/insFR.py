@@ -1,20 +1,14 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-#title           :menu.py
-#description     :This program displays an interactive menu on CLI
-#author          :
-#date            :
-#version         :0.1
-#usage           :python menu.py
-#notes           :
-#python_version  :2.7.6  
+#author          :SimplyPancake
+#python_version  :2.7.6
 #=======================================================================
 
 # Import the modules needed to run the script.
 import sys, os
 
 # Main definition - constants
-menu_actions  = {}  
+menu_actions  = {}
 
 # =======================
 #     MENUS FUNCTIONS
@@ -23,21 +17,21 @@ menu_actions  = {}
 # Main menu
 def main_menu():
     os.system('clear')
-    
+
     print """
 ███████╗ █████╗ ████████╗██████╗  █████╗ ████████╗
 ██╔════╝██╔══██╗╚══██╔══╝██╔══██╗██╔══██╗╚══██╔══╝
-█████╗  ███████║   ██║   ██████╔╝███████║   ██║   
-██╔══╝  ██╔══██║   ██║   ██╔══██╗██╔══██║   ██║   
-██║     ██║  ██║   ██║   ██║  ██║██║  ██║   ██║   
-╚═╝     ╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝   ╚═╝  
-_______________                                                        
+█████╗  ███████║   ██║   ██████╔╝███████║   ██║
+██╔══╝  ██╔══██║   ██║   ██╔══██╗██╔══██║   ██║
+██║     ██║  ██║   ██║   ██║  ██║██║  ██║   ██║
+╚═╝     ╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝   ╚═╝
+_______________
 |     By      |
 |SimplyPancake|
 |_____________|
-(\__/) || 
-(•ㅅ•) || 
-/ 　 \づ  
+(\__/) ||
+(•ㅅ•) ||
+/ 　 \づ
 	  """
     print "What to do with TheFatRat?:"
     print "1. Run TheFatRat"
@@ -64,19 +58,19 @@ def exec_menu(choice):
             menu_actions['main_menu']()
     return
 
-# install fatrat
-def insFR():
+# install
+def Install():
     os.system('git clone https://github.com/Screetsec/TheFatRat.git')
     os.system('chmod +x TheFatRat/setup.sh')
     os.system('clear')
     print "somehow, someway, running scripts in python messes up a bit. Please run 'cd TheFatRat && ./setup.sh'. The install script will ask you if you want to create a shortcut. Please answer with 'y', otherwise this script won't work."
 
 #run fatrat
-def runFR():
+def run():
     os.system('fatrat')
 
 #update fatrat
-def updtFR():
+def updt():
     os.system('chmod +x TheFatRat/update && ./TheFatRat/update && chmod +x TheFatRat/setup.sh && ./TheFatRat/setup.sh')
     os.system('clear')
     os.system('python insFR.py')
@@ -100,9 +94,9 @@ def exit():
 # Menu definition
 menu_actions = {
     'main_menu': main_menu,
-    '2': insFR,
-    '1': runFR,
-    '3': updtFR,
+    '2': Install,
+    '1': run,
+    '3': updt,
     'a': about,
     '99': exit,
 }

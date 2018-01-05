@@ -1,20 +1,14 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-#title           :menu.py
-#description     :This program displays an interactive menu on CLI
-#author          :
-#date            :
-#version         :0.1
-#usage           :
-#notes           :
-#python_version  :2.7.6  
+#author          :SimplyPancake
+#python_version  :2.7.6
 #=======================================================================
 
 # Import the modules needed to run the script.
 import sys, os
 
 # Main definition - constants
-menu_actions  = {}  
+menu_actions  = {}
 
 # =======================
 #     MENUS FUNCTIONS
@@ -23,7 +17,7 @@ menu_actions  = {}
 # Main menu
 def main_menu():
     os.system('clear')
-    
+
     print """
 ██████╗ ███████╗ ██████╗ ███████╗███╗   ██╗
 ██╔══██╗╚══███╔╝██╔════╝ ██╔════╝████╗  ██║
@@ -31,13 +25,13 @@ def main_menu():
 ██║  ██║ ███╔╝  ██║   ██║██╔══╝  ██║╚██╗██║
 ██████╔╝███████╗╚██████╔╝███████╗██║ ╚████║
 ╚═════╝ ╚══════╝ ╚═════╝ ╚══════╝╚═╝  ╚═══╝
-_______________                                                        
+_______________
 |     By      |
 |SimplyPancake|
 |_____________|
-(\__/) || 
-(•ㅅ•) || 
-/ 　 \づ  
+(\__/) ||
+(•ㅅ•) ||
+/ 　 \づ
 	  """
     print "What to do with DZGEN?:"
     print "1. Run DZGEN"
@@ -64,19 +58,19 @@ def exec_menu(choice):
             menu_actions['main_menu']()
     return
 
-# run DZGEN
-def runDZ():
+# run
+def run():
     os.system('./DZGEN/DZGEN')
     return
 
-#update DZGEN
-def updtDZ():
+#update
+def updt():
     os.system('cd DZGEN && sudo git pull')
     os.system('clear')
     os.system('python insDZ.py')
 
-#install DZGEN
-def insDZ():
+#install
+def install():
     os.system('git clone https://github.com/joker25000/DZGEN.git')
     os.system('chmod +x DZGEN/DZGEN')
     os.system('clear')
@@ -97,9 +91,9 @@ def exit():
 # Menu definition
 menu_actions = {
     'main_menu': main_menu,
-    '1': runDZ,
-    '2': insDZ,
-    '3': updtDZ,
+    '1': run,
+    '2': install,
+    '3': updt,
     'a': about,
     '99': exit,
 }

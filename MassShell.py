@@ -1,12 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-#title           :menu.py
-#description     :This program displays an interactive menu on CLI
-#author          :
-#date            :
-#version         :0.1
-#usage           :
-#notes           :
+#author          :SimplyPancake
 #python_version  :2.7.6
 #=======================================================================
 

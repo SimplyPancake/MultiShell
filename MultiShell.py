@@ -1,13 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-#title           :multiSH.py
-#description     :This program displays an interactive menu on CLI
 #author          :SimplyPancake
-#date            :
-#version         :0.1
-#usage           :
-#notes           :
-#python_version  :2.7.6  
+#python_version  :2.7.6
 #================================================================
 				#SETUP
 #================================================================
@@ -15,7 +9,7 @@
 import sys, os
 
 # Main definition - constants
-menu_actions  = {}  
+menu_actions  = {}
 
 # =======================
 #     MENUS FUNCTIONS
@@ -24,7 +18,7 @@ menu_actions  = {}
 # Main menu
 def main_menu():
     os.system('clear')
-    
+
     print"""
 ███╗   ███╗██╗   ██╗██╗  ████████╗██╗   ███████╗██╗  ██╗
 ████╗ ████║██║   ██║██║  ╚══██╔══╝██║   ██╔════╝██║  ██║
@@ -32,14 +26,14 @@ def main_menu():
 ██║╚██╔╝██║██║   ██║██║     ██║   ██║   ╚════██║██╔══██║
 ██║ ╚═╝ ██║╚██████╔╝███████╗██║   ██║██╗███████║██║  ██║
 ╚═╝     ╚═╝ ╚═════╝ ╚══════╝╚═╝   ╚═╝╚═╝╚══════╝╚═╝  ╚═╝
-v1.8.2
-_______________                                                        
+v1.8.3
+_______________
 |     By      |
 |SimplyPancake|
 |_____________|
-(\__/) || 
-(•ㅅ•) || 
-/ 　 \づ  
+(\__/) ||
+(•ㅅ•) ||
+/ 　 \づ
 """
     print "Please choose the menu you want to start:"
     print "1. Fsociety"
