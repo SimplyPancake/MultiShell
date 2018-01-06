@@ -93,7 +93,6 @@ def exit():
 # Menu definition
 menu_actions = {
     'main_menu': main_menu,
-    'main_menu2': main_menu2,
     '1': run,
     '2': install,
     '3': updt,
