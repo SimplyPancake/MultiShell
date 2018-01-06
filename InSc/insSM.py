@@ -61,7 +61,8 @@ def exec_menu(choice):
 # run
 def run():
     os.system('python sqlmap-dev/sqlmap.py -h')
-    choice = raw_input(" Run options >>  ")
+    print("Now choose from the menu!")
+    choice = raw_input("sqlmap ")
     os.system( "python sqlmap-dev/sqlmap.py " + choice)
     return
 
