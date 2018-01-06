@@ -63,6 +63,7 @@ def exec_menu(choice):
 def install():
     os.system('git clone https://github.com/boxug/trape.git')
     os.system('cd trape && pip install requirements.txt')
+    os.system('python insTP.py')
     return
 
 
@@ -78,6 +79,7 @@ def run():
 # update
 def updt():
     os.system('cd trape && sudo git pull')
+    os.system('cd trape && pip install requirements.txt')
     os.system('clear')
     os.system('python insTP.py')
 
