@@ -60,7 +60,7 @@ def exec_menu(choice):
     return
 
 # run
- def run():
+def run():
     os.system('java -jar sAINT/sAINT.jar')
     return
 
