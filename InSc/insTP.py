@@ -62,7 +62,7 @@ def exec_menu(choice):
 # install
 def install():
     os.system('git clone https://github.com/boxug/trape.git')
-    os.system('pip install trape/requirements.txt')
+    os.system('cd trape && pip install requirements.txt')
     return
 
 
