@@ -64,6 +64,7 @@ def run():
     print("Now choose from the menu!")
     choice = raw_input("sqlmap ")
     os.system( "python sqlmap-dev/sqlmap.py " + choice)
+    os.system("python insSM.py")
     return
 
 #update
