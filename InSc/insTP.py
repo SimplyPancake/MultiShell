@@ -70,6 +70,7 @@ def install():
 # run
 def run():
     os.system('python trape/trape.py -h')
+    print "============================="
     print("Now choose from the menu!")
     choice = raw_input("trape ")
     os.system( "python trape/trape.py " + choice)
