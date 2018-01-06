@@ -68,7 +68,7 @@ def run():
 def updt():
     os.system('cd sAINT && sudo git pull')
     os.system('clear')
-    os.system('python insSM.py')
+    os.system('python insSA.py')
 
 #install
 def install():
@@ -78,7 +78,7 @@ def install():
     os.system('chmod +x sAINT/configure.sh')
     os.system('cd sAINT && ./configure.sh')
     os.system('clear')
-    os.system('python insSM.py')
+    os.system('python insSA.py')
 
 #about
 def about():
