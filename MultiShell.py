@@ -44,6 +44,7 @@ _______________
     print "6. Fluxion"
     print "7. Yuki-Chan"
     print "8. RouterSploit"
+    print "9. SQLMap"
     print "m. Enter mass-action menu"
     print "\n99. Quit"
     choice = raw_input(" >>  ")
@@ -100,6 +101,9 @@ def yuki():
 def rsploit():
     os.system('cd InSc && python insRS.py')
 
+#sqlmap
+def sqlmap():
+    os.system('cd InSc && python insSM.py')
 
 #mass action menu
 def mass():
@@ -124,6 +128,7 @@ menu_actions = {
     '6': fluxion,
     '7': yuki,
     '8': rsploit,
+    '9': sqlmap,
     'm': mass,
     '99': exit,
 }

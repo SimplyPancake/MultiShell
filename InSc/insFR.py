@@ -61,9 +61,9 @@ def exec_menu(choice):
 # install
 def Install():
     os.system('git clone https://github.com/Screetsec/TheFatRat.git')
-    os.system('chmod +x TheFatRat/setup.sh')
+    os.system('chmod +x InSc/TheFatRat/setup.sh')
     os.system('clear')
-    print "somehow, someway, running scripts in python messes up a bit. Please run 'cd TheFatRat && ./setup.sh'. The install script will ask you if you want to create a shortcut. Please answer with 'y', otherwise this script won't work."
+    print "somehow, someway, running scripts in python messes up a bit. Please run 'cd InSc/TheFatRat && ./setup.sh'. The install script will ask you if you want to create a shortcut. Please answer with 'y', otherwise this script won't work."
 
 #run fatrat
 def run():
