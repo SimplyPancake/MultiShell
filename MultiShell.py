@@ -107,7 +107,7 @@ def saint():
     os.system('cd InSc && python insSA.py')
 
 #trape
-def trape
+def trape():
     os.system('cd Insc && python insTP')
 
 #mass action menu
