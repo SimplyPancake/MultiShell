@@ -67,6 +67,8 @@ def run():
 #update
 def updt():
     os.system('cd sAINT && sudo git pull')
+    os.system('chmod +x sAINT/configure.sh')
+    os.system('cd sAINT && ./configure.sh')
     os.system('clear')
     os.system('python insSA.py')
 
