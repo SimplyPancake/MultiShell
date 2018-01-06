@@ -81,6 +81,13 @@ def upd8():
 #Update Yuki Chan
     os.system('cd InSc/Yuki-Chan-The-Auto-Pentest && sudo git pull')
     os.system('clear')
+#Update Trape
+    os.system('cd InSc/trape && sudo git pull')
+    os.system('clear')
+#Update sAINT
+    os.system('cd InSc/sAINT && sudo git pull')
+    os.system('chmod +x InSc/sAINT/configure.sh')
+    os.system('cd sAINT && ./configure.sh')
 #Update FatRat
     os.system('chmod +x InSc/TheFatRat/update && ./InSc/TheFatRat/update')
     os.system('chmod +x InSc/TheFatRat/setup.sh && ./InSc/TheFatRat/setup.sh')
@@ -119,6 +126,16 @@ def installall():
     os.system('cd InSc/Yuki-Chan-The-Auto-Pentest && chmod 777 Module/WhatWeb/whatweb')
     os.system('pip install -r InSc/Yuki-Chan-The-Auto-Pentest/requirements.txt')
     os.system('cd InSc/Yuki-Chan-The-Auto-Pentest && ./install perl-module.sh')
+    os.system('clear')
+#install Trape
+    os.system('cd InSc && git clone https://github.com/boxug/trape.git')
+    os.system('pip install InSc/trape/requirements.txt')
+#install sAINT
+    os.system('apt install maven default-jdk default-jre openjdk-8-jdk openjdk-8-jre -y')
+    os.system('apt install zlib1g-dev libncurses5-dev lib32z1 lib32ncurses5 -y')
+    os.system('cd InSc && git clone https://github.com/tiagorlampert/sAINT.git')
+    os.system('chmod +x InSc/sAINT/configure.sh')
+    os.system('cd InSc/sAINT && ./configure.sh')
     os.system('clear')
 #print msg to install trity and fatrat.
     os.system('clear')

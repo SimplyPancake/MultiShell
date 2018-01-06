@@ -36,15 +36,16 @@ _______________
 / 　 \づ
 """
     print "Please choose the menu you want to start:"
-    print "1. Fsociety"
-    print "2. RED_HAWK"
-    print "3. TheFatRat"
-    print "4. Trity"
-    print "5. DZGEN"
-    print "6. Fluxion"
-    print "7. Yuki-Chan"
-    print "8. RouterSploit"
-    print "9. sAINT"
+    print "1.   Fsociety"
+    print "2.   RED_HAWK"
+    print "3.   TheFatRat"
+    print "4.   Trity"
+    print "5.   DZGEN"
+    print "6.   Fluxion"
+    print "7.   Yuki-Chan"
+    print "8.   RouterSploit"
+    print "9.   sAINT"
+    print "10.  Trape"
     print "m. Enter mass-action menu"
     print "\n99. Quit"
     choice = raw_input(" >>  ")
@@ -101,9 +102,13 @@ def yuki():
 def rsploit():
     os.system('cd InSc && python insRS.py')
 
-#sqlmap
+#sAINT
 def saint():
     os.system('cd InSc && python insSA.py')
+
+#trape
+def trape
+    os.system('cd Insc && python insTP')
 
 #mass action menu
 def mass():
@@ -129,6 +134,7 @@ menu_actions = {
     '7': yuki,
     '8': rsploit,
     '9': saint,
+    '10': trape
     'm': mass,
     '99': exit,
 }
