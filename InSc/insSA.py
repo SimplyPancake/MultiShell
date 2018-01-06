@@ -82,7 +82,12 @@ def install():
 
 #about
 def about():
-    print"👁 (s)AINT is a Spyware Generator for Windows systems written in Java."
+    print"""
+👁 (s)AINT is a Spyware Generator for Windows systems written in Java.
+On Windows, install the latest Java JRE 8 from Oracle.
+E-mail will be sent when it reaches the specified number of characters.
+Optionally you can enable Screenshot, Webcam Capture and Persistence.
+    """
 
 
 # Exit program
