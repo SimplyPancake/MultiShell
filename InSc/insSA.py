@@ -59,10 +59,10 @@ def exec_menu(choice):
             menu_actions['main_menu']()
     return
 
-# run a script environment
+# run
  def run():
     os.system('java -jar sAINT/sAINT.jar')
-#    return
+    return
 
 #update
 def updt():
