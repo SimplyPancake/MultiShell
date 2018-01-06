@@ -134,7 +134,7 @@ menu_actions = {
     '7': yuki,
     '8': rsploit,
     '9': saint,
-    '10': trape
+    '10': trape,
     'm': mass,
     '99': exit,
 }
