@@ -5,7 +5,7 @@ Why to use MultiShell? It is hard to manage all your tools for hacking **:(** as
 
 ## Installation
 
-git clone https://github.com/SimplyPancake/MultiShell.git
+git clone -b Releases https://github.com/SimplyPancake/MultiShell.git
 
 cd MultiShell
 
