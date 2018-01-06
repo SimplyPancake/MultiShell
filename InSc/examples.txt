@@ -1,0 +1,11 @@
+def run():
+    os.system('python sqlmap-dev/sqlmap.py -h')
+    print("Now choose from the menu!")
+    choice = raw_input("sqlmap ")
+    os.system( "python sqlmap-dev/sqlmap.py " + choice)
+    os.system("python insSM.py")
+    return
+
+    sqlmap is hetgene dat je installeert,
+    in lijn 2 staat er sqlmap.py. dat is het uitvoerbare script. de -h laat de opties zien
+    in lijn 4 staat er alleen sqlmap. dat is een print. Dat maakt niet uit wat er staat.

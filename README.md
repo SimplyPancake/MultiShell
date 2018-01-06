@@ -10,4 +10,3 @@ git clone https://github.com/SimplyPancake/MultiShell.git
 cd MultiShell
 
 python MultiShell.py
-

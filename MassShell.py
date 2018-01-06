@@ -85,10 +85,6 @@ def upd8():
     os.system('chmod +x InSc/TheFatRat/update && ./InSc/TheFatRat/update')
     os.system('chmod +x InSc/TheFatRat/setup.sh && ./InSc/TheFatRat/setup.sh')
     os.system('clear')
-#Update sqlmap
-    os.system('cd InSc/sqlmap-dev && sudo git pull')
-    os.system('clear')
-    os.system('python insSM.py')
 #Go back to main menu
     os.system('python MassShell.py')
 
@@ -123,9 +119,6 @@ def installall():
     os.system('cd InSc/Yuki-Chan-The-Auto-Pentest && chmod 777 Module/WhatWeb/whatweb')
     os.system('pip install -r InSc/Yuki-Chan-The-Auto-Pentest/requirements.txt')
     os.system('cd InSc/Yuki-Chan-The-Auto-Pentest && ./install perl-module.sh')
-    os.system('clear')
-#install sqlmpap
-os.system('cd InSc && git clone --depth 1 https://github.com/sqlmapproject/sqlmap.git sqlmap-dev')
     os.system('clear')
 #print msg to install trity and fatrat.
     os.system('clear')
