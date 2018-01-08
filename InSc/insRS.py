@@ -86,7 +86,7 @@ def installU():
     os.system('cd routersploit && sudo pip install -r requirements.txt')
 
 #update
-def update():
+def updt():
     os.system('cd routersploit && sudo git pull')
     os.system('clear')
     os.system('python insRS.py')
